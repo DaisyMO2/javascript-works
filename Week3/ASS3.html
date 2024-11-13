@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #5C6BC0;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 5px solid #3949AB;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Profile Picture Section */
+        .profile-section {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #3949AB;
+            object-fit: cover;
+        }
+
+        /* About Section */
+        .about-me {
+            padding: 2rem 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about-me h2 {
+            font-size: 2rem;
+            color: #3949AB;
+            border-bottom: 2px solid #3949AB;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-me p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 3rem 0;
+            background-color: #f9f9f9;
+        }
+
+        .portfolio h2 {
+            font-size: 2rem;
+            color: #3949AB;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ab4c39;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-me h2, .portfolio h2 {
+                font-size: 1.8rem;
+            }
+
+            .about-me p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MARUNGA DAISY</h1>
+            <p>Web Developer | Designer | Coder</p>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <img src="boom.jpg" alt="Profile Picture">
+    </section>
+
+    <section class="about-me" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm MARUNGA DAISY a student at uganda christain unversity persuing a degree in information technology.</p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="grid">
+                <div class="portfolio-item">
+                    <img src="WhatsApp Image 2024-09-23 at 19.47.43_41164001.jpg" alt="poetry">
+                    <h3>poetry</h3>
+                    <p>it all about writing stories and novels and publishing them to the internat.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="WhatsApp Image 2024-09-23 at 19.47.07_615414f3.jpg" alt="shefund">
+                    <h3>shefund</h3>
+                    <p>it supports the unsupported women and provides them with their necessities</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="WhatsApp Image 2024-09-23 at 19.46.46_d9eecd15.jpg" alt="">
+                    <h3>carbon guard</h3>
+                    <p>it manufactures paint that is carborn free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 daisy marunga</p>
+        </div>
+    </footer>
+</body>
+</html>
+ 

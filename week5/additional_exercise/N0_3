@@ -1,0 +1,17 @@
+class Hospital {
+    constructor(name, location, numberOfBeds) {
+        this.name = name;
+        this.location = location;
+        this.numberOfBeds = numberOfBeds;
+    }
+
+    calculateTotalCapacity(numberOfWards, bedsPerWard) {
+        return numberOfWards * bedsPerWard;
+    }
+}
+
+// Example usage:
+const hospital = new Hospital('Mulago Hospital', 'Kampala', 1500);
+console.log(hospital.calculateTotalCapacity(30, 50));
+
+ // Output: 1500
